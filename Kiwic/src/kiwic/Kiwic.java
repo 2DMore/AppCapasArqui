@@ -5,6 +5,7 @@ package kiwic;
 
 import Capa1.VariacionesFrases;
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  *
@@ -20,6 +21,7 @@ public class Kiwic {
         System.out.println("------------------");
         VariacionesFrases kiwicParser = new VariacionesFrases();
         ArrayList<String> Frases = kiwicParser.crarIndice(a);
+        Collections.sort(Frases);
         for(String s: Frases){
             System.out.println(s);
         }
